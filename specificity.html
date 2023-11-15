@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        #heading-1{
+            color: darkgreen;
+        }
+        .heading{
+            color: brown;
+        }
+        h4{
+            color: aquamarine;
+        }
+        h4{
+            color: aqua;
+            color:blueviolet !important;
+        }
+    </style>
+</head>
+<body>
+    <h4 style="color: darkorchid;" class="heading" id="heading-1">More Headings</h4>
+    <h4 class="heading" id="heading-2">More Headings</h4>
+    <h4 class="heading" id="heading-3">More Headings</h4>
+    <h4 class="heading" id="heading-4">More Headings</h4>
+</body>
+</html>

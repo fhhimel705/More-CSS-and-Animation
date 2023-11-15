@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom var</title>
+    <style>
+      :root {
+        --Primary-color: slateblue;
+        --secondary-color: green;
+        --border-1: solid 2px darkblue;
+      }
+      h1 {
+        color: var(--Primary-color);
+      }
+      #heading-3 {
+        border: var(--border-1);
+      }
+      p {
+        border-bottom: 2px solid var(--Primary-color);
+      }
+      .box {
+        background-color: var(--Primary-color);
+      }
+      .pond {
+        background-color: var(--secondary-color);
+
+    }
+    .pond{
+        width: calc(100% - 500px);
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Custom var , Calc</h1>
+    <h1 class="heading" id="heading-1">My strong heading</h1>
+    <h1 class="heading" id="heading-2">My strong heading</h1>
+    <h1 class="heading" id="heading-3">My strong heading</h1>
+    <h1 class="heading" id="heading-4">My strong heading</h1>
+    <p>My simple talk</p>
+    <div class="box">
+      <h3>whatever bla bla bla</h3>
+    </div>
+    <div class="pond">
+      <p>bla bla bla bla</p>
+      <p>bla bla bla bla</p>
+      <p>bla bla bla bla</p>
+      <p>bla bla bla bla</p>
+    </div>
+  </body>
+</html>
